@@ -7,7 +7,7 @@ export default {
 export const Default = {
   args: {
     id: 'rememberCheck',
-    label: 'Remember me?'
+    label: 'Remember this computer?'
   },
   render: (args) => {
     return <Checkbox {...args} />
