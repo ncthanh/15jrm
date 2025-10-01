@@ -1,6 +1,6 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [pull_request]
+on: workflow_dispatch
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -16,3 +16,44 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "Testing ${{ github.action }}."
+      - run: echo "Testing ${{ github.action_path }}."
+      - run: echo "Testing ${{ github.action_ref }}."
+      - run: echo "Testing ${{ github.action_repository }}."
+      - run: echo "Testing ${{ github.action_status }}."
+      - run: echo "Testing ${{ github.actor }}."
+      - run: echo "Testing ${{ github.actor_id }}."
+      - run: echo "Testing ${{ github.base_ref }}."
+      - run: echo "Testing ${{ github.env }}."
+      - run: echo "Testing ${{ github.event }}."
+      - run: echo "Testing ${{ github.event_name }}."
+      - run: echo "Testing ${{ github.event_path }}."
+      - run: echo "Testing ${{ github.graphql_url }}."
+      - run: echo "Testing ${{ github.head_ref }}."
+      - run: echo "Testing ${{ github.job }}."
+      - run: echo "Testing ${{ github.path }}."
+      - run: echo "Testing ${{ github.ref }}."
+      - run: echo "Testing ${{ github.ref_name }}."
+      - run: echo "Testing ${{ github.ref_protected }}."
+      - run: echo "Testing ${{ github.ref_type }}."
+      - run: echo "Testing ${{ github.repository }}."
+      - run: echo "Testing ${{ github.repository_id }}."
+      - run: echo "Testing ${{ github.repository_owner }}."
+      - run: echo "Testing ${{ github.repository_owner_id }}."
+      - run: echo "Testing ${{ github.repositoryUrl }}."
+      - run: echo "Testing ${{ github.retention_days }}."
+      - run: echo "Testing ${{ github.run_id }}."
+      - run: echo "Testing ${{ github.run_number }}."
+      - run: echo "Testing ${{ github.run_attempt }}."
+      - run: echo "Testing ${{ github.secret_source }}."
+      - run: echo "Testing ${{ github.server_url }}."
+      - run: echo "Testing ${{ github.sha }}."
+      - run: echo "Testing ${{ github.token }}."
+      - run: echo "Testing ${{ github.triggering_actor }}."
+      - run: echo "Testing ${{ github.workflow }}."
+      - run: echo "Testing ${{ github.workflow_ref }}."
+      - run: echo "Testing ${{ github.workflow_sha }}."
+      - run: echo "Testing ${{ github.workspace }}."
+      - run: echo "Testing ${{ github.event.pull_request.title }}."
+      - run: echo "Testing ${{ github.event.pull_request.body }}."
+      - run: echo "Testing ${{ github.event.head_commit.message }}."
