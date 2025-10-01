@@ -1,5 +1,5 @@
 export default function Checkbox ({ id, label }) {
-  return <div>
+  return <div style={{backgroundColor: 'blue'}}>
     <input type="checkbox" id={id} style={{margin: '0 8px'}}/>
     <label for={id}>{label}</label>
   </div>
